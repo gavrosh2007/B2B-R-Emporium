@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emporium Cars | Автоопт для бизнеса</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #B00000;
+      --secondary: #8B0000;
+      --accent: #FFD700;
+      --light: #FFF5F5;
+      --dark: #1A1A1A;
+    }
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: var(--light);
+      color: var(--dark);
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    header {
+      background: var(--primary);
+      padding: 40px 0;
+      text-align: center;
+      color: white;
+    }
+    h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 2.8rem;
+      font-weight: 800;
+      font-style: italic;
+      margin: 0;
+      letter-spacing: 1px;
+    }
+    .contact-bar {
+      background: var(--dark);
+      color: white;
+      padding: 15px 0;
+      text-align: center;
+      font-size: 1.1rem;
+    }
+    .business-offer {
+      padding: 80px 0;
+      text-align: center;
+    }
+    .offer-cards {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      margin-top: 50px;
+    }
+    .offer-card {
+      background: white;
+      border-radius: 10px;
+      padding: 40px 30px;
+      width: 100%;
+      max-width: 500px;
+      box-shadow: 0 5px 25px rgba(0,0,0,0.08);
+    }
+    .offer-card.realtor {
+      border-top: 5px solid #C30E2D;
+    }
+    .offer-card.hr {
+      border-top: 5px solid #1C69D4;
+    }
+    .offer-card h3 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.8rem;
+      margin-top: 0;
+    }
+    .offer-card ul {
+      text-align: left;
+      padding-left: 20px;
+    }
+    .offer-card li {
+      margin-bottom: 12px;
+      position: relative;
+      list-style-type: none;
+      padding-left: 25px;
+    }
+    .offer-card li:before {
+      content: "•";
+      color: var(--accent);
+      font-size: 1.8rem;
+      position: absolute;
+      left: 0;
+      top: -5px;
+    }
+    .btn {
+      display: inline-block;
+      background: var(--accent);
+      color: var(--dark);
+      padding: 14px 35px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+      margin-top: 25px;
+      transition: all 0.3s;
+    }
+    .btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    .benefits {
+      background: var(--secondary);
+      color: white;
+      padding: 80px 0;
+      text-align: center;
+    }
+    .benefits-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+    .benefit-card {
+      background: rgba(255,255,255,0.1);
+      padding: 30px;
+      border-radius: 10px;
+      border-left: 4px solid var(--accent);
+    }
+    footer {
+      background: var(--dark);
+      color: white;
+      text-align: center;
+      padding: 40px 0;
+    }
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2.2rem;
+      }
+      .offer-cards {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="contact-bar">
+    Телефон: 77 77 77 23 | Email: emporiumcarsrd@gmail.com | Лимассол, Кипр
+  </div>
+
+  <header>
+    <div class="container">
+      <h1>EMPORIUM CARS</h1>
+      <p style="font-size: 1.3rem; margin-top: 10px;">Автомобили для бизнеса с особой выгодой</p>
+    </div>
+  </header>
+
+  <section class="business-offer">
+    <div class="container">
+      <h2 style="font-family: 'Montserrat'; font-size: 2.2rem;">Создайте дополнительный доход с нашими авто</h2>
+      <p style="font-size: 1.2rem; max-width: 800px; margin: 20px auto 0;">
+        Специальные условия для компаний, которые хотят увеличить прибыль через автомобильные решения
+      </p>
+
+      <div class="offer-cards">
+        <!-- Для риэлторов -->
+        <div class="offer-card realtor">
+          <h3>Для риэлторов</h3>
+          <p>Добавьте авто в пакет и повысьте средний чек</p>
+          <ul>
+            <li>Автомобиль как бонус при покупке недвижимости</li>
+            <li>Готовые маркетинговые материалы для ваших клиентов</li>
+            <li>Дополнительный доход от каждой сделки</li>
+            <li>Персональные условия для партнеров</li>
+          </ul>
+          <a href="mailto:emporiumcarsrd@gmail.com" class="btn">Обсудить партнерство</a>
+        </div>
+
+        <!-- Для HR -->
+        <div class="offer-card hr">
+          <h3>Для HR-компаний</h3>
+          <p>Решите транспортные проблемы сотрудников</p>
+          <ul>
+            <li>Пакетные решения для удаленных работников</li>
+            <li>Спеццены от 5 автомобилей</li>
+            <li>Полное сопровождение (страховка, ТО)</li>
+            <li>Гибкие схемы аренды с выкупом</li>
+          </ul>
+          <a href="mailto:emporiumcarsrd@gmail.com" class="btn">Получить оптовый прайс</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="benefits">
+    <div class="container">
+      <h2 style="font-family: 'Montserrat'; font-size: 2.2rem;">Почему компании выбирают нас</h2>
+      <div class="benefits-grid">
+        <div class="benefit-card">
+          <h3>Финансовая выгода</h3>
+          <p>Оптовые цены позволяют зарабатывать на перепродаже или включать авто в пакетные предложения</p>
+        </div>
+        <div class="benefit-card">
+          <h3>Минимум усилий</h3>
+          <p>Мы берем на себя логистику, оформление и подготовку автомобилей</p>
+        </div>
+        <div class="benefit-card">
+          <h3>Эксклюзивные условия</h3>
+          <p>Персональные скидки для постоянных партнеров</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" style="padding: 80px 0; text-align: center;">
+    <div class="container">
+      <h2 style="font-family: 'Montserrat'; font-size: 2.2rem;">Готовы обсудить сотрудничество?</h2>
+      <p style="font-size: 1.2rem; margin: 20px 0 40px;">
+        Оставьте заявку, и наш менеджер предложит оптимальное решение для вашего бизнеса. Обязательно встречайтесь в офисе компании для обсуждения всех вопросов.
+      </p>
+      <a href="mailto:emporiumcarsrd@gmail.com" class="btn" style="background: var(--primary); color: white;">Написать нам</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p style="font-size: 1.3rem; margin-bottom: 10px;">Emporium Cars | Авто для бизнеса</p>
+      <p>Телефон: 77 77 77 23 | 99 66 99 52</p>
+      <p style="margin-top: 20px;">© 2023 Все права защищены</p>
+    </div>
+  </footer>
+</body>
+</html>
